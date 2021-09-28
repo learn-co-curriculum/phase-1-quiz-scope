@@ -1,7 +1,7 @@
 ---
 id: 12279
 course_id: 3297
-repo: phase-1-quiz-scope-quiz
+repo: phase-1-quiz-scope
 ---
 
 # Scope Quiz
