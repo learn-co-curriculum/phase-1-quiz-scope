@@ -4,7 +4,7 @@
     "title": "Scope Quiz",
     "html_url": "https://learning.flatironschool.com/courses/3297/quizzes/12279",
     "mobile_url": "https://learning.flatironschool.com/courses/3297/quizzes/12279?force_user=1&persist_headless=1",
-    "description": "<p><span>It's time to check your knowledge! Use this quiz to create a custom study guide. Note any answers that were marked incorrect, so you can study the relevant material and try this quiz again.</span></p>\n<p><span>If you don't know the answer to a question, please do not guess. Instead, select \"I don't know\". It's OK not to know everything and to admit when we're unsure.</span></p>",
+    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"phase-1-quiz-scope\"></div>\n<header class=\"fis-header\">\n  <a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/phase-1-quiz-scope/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a>\n</header>\n\n<p>It's time to check your knowledge! Use this quiz to create a custom study guide.\nNote any answers that were marked incorrect, so you can study the relevant\nmaterial and try this quiz again.</p>\n\n<p>If you don't know the answer to a question, please do not guess. Instead, select\n\"I don't know\". It's OK not to know everything and to admit when we're unsure.</p>",
     "quiz_type": "assignment",
     "time_limit": null,
     "timer_autosubmit_disabled": false,
@@ -29,7 +29,7 @@
       "asset_string": "quizzes:quiz_12279"
     },
     "lock_explanation": "This quiz is currently locked.",
-    "hide_results": null,
+    "hide_results": "until_after_last_attempt",
     "show_correct_answers_at": null,
     "hide_correct_answers_at": null,
     "all_dates": [
@@ -71,7 +71,7 @@
     "only_visible_to_overrides": false,
     "assignment_group_id": 6357,
     "show_correct_answers_last_attempt": true,
-    "version_number": 1,
+    "version_number": 2,
     "has_access_code": false,
     "post_to_sis": false,
     "migration_id": null,
@@ -88,28 +88,28 @@
       "position": null,
       "question_name": "Scope: Closure",
       "question_type": "true_false_question",
-      "question_text": "<p><span>Closure gives you access to an outer function’s scope from an inner function.</span></p>",
+      "question_text": "<p>Closure gives you access to an outer function's variables from an inner function.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "<p>&nbsp;<strong>Source/s:&nbsp;</strong><a class=\"inline_disabled\" href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\" target=\"_blank\">Scope Chain</a>, <a class=\"inline_disabled\" href=\"https://learning.flatironschool.com/courses/3297/pages/lexical-scoping?module_item_id=143573\" target=\"_blank\">Lexical Scoping</a></p>",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\">Scope Chain</a></li><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/lexical-scoping?module_item_id=143573\">Lexical Scoping</a></li></ul><p></p>",
       "answers": [
         {
           "comments": "",
           "comments_html": "<p>Correct!</p>",
           "text": "True",
           "weight": 100,
-          "id": 2621
+          "id": 8129
         },
         {
           "comments": "",
-          "comments_html": "<p><span>Be sure to study the source/s for this question. You'll get it next time.</span></p>",
+          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
           "text": "False",
           "weight": 0,
-          "id": 3141
+          "id": 9895
         }
       ],
       "variables": null,
@@ -127,45 +127,45 @@
       "position": null,
       "question_name": "Scope: Lexical Scoping",
       "question_type": "multiple_choice_question",
-      "question_text": "<p><span>What variables does the <strong>outerFunc</strong> have access to?</span></p>\n<pre><span>const var1 = 1; </span><br><span>function outerFunc (var2 = 2) { </span><br><span>  const var3 = 2; </span><br><span>  function innerFunc(){ </span><br><span>    const var4 = 4 </span><br><span>  } </span><br><span>  return var1 + var2; </span><br><span>}</span></pre>",
+      "question_text": "<p>What variables does <code>outerFunc</code> have access to?</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">const</span> <span class=\"nx\">var1</span> <span class=\"o\">=</span> <span class=\"mi\">1</span><span class=\"p\">;</span>\n<span class=\"kd\">function</span> <span class=\"nx\">outerFunc</span><span class=\"p\">(</span><span class=\"nx\">var2</span> <span class=\"o\">=</span> <span class=\"mi\">2</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"nx\">var3</span> <span class=\"o\">=</span> <span class=\"mi\">2</span><span class=\"p\">;</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">innerFunc</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"kd\">const</span> <span class=\"nx\">var4</span> <span class=\"o\">=</span> <span class=\"mi\">4</span><span class=\"p\">;</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"nx\">var1</span> <span class=\"o\">+</span> <span class=\"nx\">var2</span><span class=\"p\">;</span>\n<span class=\"p\">}</span>\n</code></pre></div>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "<p>&nbsp;<strong>Source/s:&nbsp;</strong><a class=\"inline_disabled\" href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\" target=\"_blank\">Scope Chain</a>, <a class=\"inline_disabled\" href=\"https://learning.flatironschool.com/courses/3297/pages/lexical-scoping?module_item_id=143573\" target=\"_blank\">Lexical Scoping</a></p>",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\">Scope Chain</a></li><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/lexical-scoping?module_item_id=143573\">Lexical Scoping</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 272,
+          "id": 5605,
           "text": "",
-          "html": "<p>var1, var2, var3</p>",
+          "html": "<p><code>var1</code>, <code>var2</code>, <code>var3</code></p>",
           "comments": "",
-          "comments_html": "<p>Correct!</p>\n<p>We have access to everything except var4, because it is declared within the scope of innerFunc.</p>",
+          "comments_html": "<p>Correct!</p>\n\n<p>We have access to everything except <code>var4</code>, because it is declared within the\nscope of <code>innerFunc</code>.</p>",
           "weight": 100.0
         },
         {
-          "id": 8990,
+          "id": 4755,
           "text": "",
-          "html": "<p>var1, var2, var3, var4</p>",
+          "html": "<p><code>var1</code>, <code>var2</code>, <code>var3</code>, <code>var4</code></p>",
           "comments": "",
-          "comments_html": "<p>Functions don't have access to the variables declared within the scope of the functions declared within them.</p>",
+          "comments_html": "<p>Functions don't have access to the variables declared within the scope of the\nfunctions declared within them, so <code>var4</code> is not available to <code>outerFunc</code></p>",
           "weight": 0.0
         },
         {
-          "id": 5346,
+          "id": 3518,
           "text": "",
-          "html": "<p>var2, var3</p>",
+          "html": "<p><code>var2</code>, <code>var3</code></p>",
           "comments": "",
-          "comments_html": "<p>var1 is a global variable, making it available everywhere!</p>",
+          "comments_html": "<p><code>var1</code> is a global variable, making it available everywhere!</p>",
           "weight": 0.0
         },
         {
-          "id": 4761,
-          "text": "I don't know.",
-          "html": "",
+          "id": 6365,
+          "text": "",
+          "html": "<p>I don't know.</p>",
           "comments": "",
-          "comments_html": "<p><span>Be sure to study the source/s for this question. You'll get it next time.</span></p>",
+          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
           "weight": 0.0
         }
       ],
@@ -184,37 +184,37 @@
       "position": null,
       "question_name": "Scope: Lexical Scoping",
       "question_type": "multiple_choice_question",
-      "question_text": "<p><span>What variables does the <strong>innerFunc</strong> have access to?</span></p>\n<pre><span>const var1 = 1; </span><br><span>function outerFunc (var2 = 2) { </span><br><span>  const var3 = 2; </span><br><span>  function innerFunc(){ </span><br><span>    const var4 = 4 </span><br><span>  } </span><br><span>  return var1 + var2; </span><br><span>}</span></pre>",
+      "question_text": "<p>What variables does <code>innerFunc</code> have access to?</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">const</span> <span class=\"nx\">var1</span> <span class=\"o\">=</span> <span class=\"mi\">1</span><span class=\"p\">;</span>\n<span class=\"kd\">function</span> <span class=\"nx\">outerFunc</span><span class=\"p\">(</span><span class=\"nx\">var2</span> <span class=\"o\">=</span> <span class=\"mi\">2</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"nx\">var3</span> <span class=\"o\">=</span> <span class=\"mi\">2</span><span class=\"p\">;</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">innerFunc</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"kd\">const</span> <span class=\"nx\">var4</span> <span class=\"o\">=</span> <span class=\"mi\">4</span><span class=\"p\">;</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"nx\">var1</span> <span class=\"o\">+</span> <span class=\"nx\">var2</span><span class=\"p\">;</span>\n<span class=\"p\">}</span>\n</code></pre></div>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "<p>&nbsp;<strong>Source/s:&nbsp;</strong><a class=\"inline_disabled\" href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\" target=\"_blank\">Scope Chain</a>, <a class=\"inline_disabled\" href=\"https://learning.flatironschool.com/courses/3297/pages/lexical-scoping?module_item_id=143573\" target=\"_blank\">Lexical Scoping</a></p>",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\">Scope Chain</a></li><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/lexical-scoping?module_item_id=143573\">Lexical Scoping</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 4718,
+          "id": 6236,
           "text": "",
-          "html": "<p>var1, var2, var3, var4</p>",
+          "html": "<p><code>var1</code>, <code>var2</code>, <code>var3</code>, <code>var4</code></p>",
           "comments": "",
-          "comments_html": "<p>Correct!</p>\n<p>Thanks to JavaScript's scope rules, the innerFunc has access to all the variables.</p>",
+          "comments_html": "<p>Correct!</p>\n\n<p>Thanks to JavaScript's scope rules, <code>innerFunc</code> has access to all the\nvariables.</p>",
           "weight": 100.0
         },
         {
-          "id": 4180,
+          "id": 1379,
           "text": "",
-          "html": "<p>var2, var3, var4</p>",
+          "html": "<p><code>var2</code>, <code>var3</code>, <code>var4</code></p>",
           "comments": "",
-          "comments_html": "<p>Because var1 is a global variable, we have access to it everywhere in our program.</p>",
+          "comments_html": "<p>Because <code>var1</code> is a global variable, we have access to it everywhere in our\nprogram.</p>",
           "weight": 0.0
         },
         {
-          "id": 1551,
-          "text": "I don't know.",
-          "html": "",
+          "id": 4065,
+          "text": "",
+          "html": "<p>I don't know.</p>",
           "comments": "",
-          "comments_html": "<p><span>Be sure to study the source/s for this question. You'll get it next time.</span></p>",
+          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
           "weight": 0.0
         }
       ],
@@ -233,28 +233,28 @@
       "position": null,
       "question_name": "Scope: Lexical Scoping",
       "question_type": "true_false_question",
-      "question_text": "<p>Lexical scope in JavaScript means that a variable defined outside a function can be accessible inside the function, but not the other way around.</p>",
+      "question_text": "<p>Lexical scope in JavaScript means that a variable defined outside a function can\nbe accessible inside the function, but not the other way around.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "<p>&nbsp;<strong>Source/s:</strong>&nbsp;<a class=\"inline_disabled\" href=\"https://learning.flatironschool.com/courses/3297/pages/lexical-scoping?module_item_id=143573\" target=\"_blank\">Lexical Scoping</a></p>",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/lexical-scoping?module_item_id=143573\">Lexical Scoping</a></li></ul><p></p>",
       "answers": [
         {
           "comments": "",
           "comments_html": "<p>Correct!</p>",
           "text": "True",
           "weight": 100,
-          "id": 6160
+          "id": 4345
         },
         {
           "comments": "",
-          "comments_html": "<p><span>Be sure to study the source/s for this question. You'll get it next time.</span></p>",
+          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
           "text": "False",
           "weight": 0,
-          "id": 3793
+          "id": 9855
         }
       ],
       "variables": null,
@@ -272,20 +272,34 @@
       "position": null,
       "question_name": "Scope: Scope Chain",
       "question_type": "short_answer_question",
-      "question_text": "<p class=\"code-line code-line\" data-line=\"4\">Which of the following variables are globally scoped?</p>\n<pre>let var1 = 1<br>function firstFunc (var2 = 2) { <br>  let var3 = 3; <br>  return var1 + var2;<br>}</pre>",
+      "question_text": "<p>Which of the following variables are globally scoped?</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">let</span> <span class=\"nx\">var1</span> <span class=\"o\">=</span> <span class=\"mi\">1</span><span class=\"p\">;</span>\n<span class=\"kd\">function</span> <span class=\"nx\">firstFunc</span><span class=\"p\">(</span><span class=\"nx\">var2</span> <span class=\"o\">=</span> <span class=\"mi\">2</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n  <span class=\"kd\">let</span> <span class=\"nx\">var3</span> <span class=\"o\">=</span> <span class=\"mi\">3</span><span class=\"p\">;</span>\n  <span class=\"k\">return</span> <span class=\"nx\">var1</span> <span class=\"o\">+</span> <span class=\"nx\">var2</span><span class=\"p\">;</span>\n<span class=\"p\">}</span>\n</code></pre></div>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "<p><span>Be sure to study the source/s for this question. You'll get it next time.</span></p>",
-      "neutral_comments_html": "<p>&nbsp;<strong>Source/s:&nbsp;</strong><a class=\"inline_disabled\" href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\" target=\"_blank\">Scope Chain</a></p>",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\">Scope Chain</a></li></ul><p></p>",
       "answers": [
         {
-          "id": "6642",
+          "id": 2877,
           "text": "var1",
           "comments": "",
           "comments_html": "<p>Correct!</p>",
+          "weight": 100
+        },
+        {
+          "id": 9268,
+          "text": "var2",
+          "comments": "",
+          "comments_html": "<p><code>var2</code> is not a global variable. It's only available within <code>firstFunc</code>.</p>",
+          "weight": 100
+        },
+        {
+          "id": 8847,
+          "text": "var3",
+          "comments": "",
+          "comments_html": "<p><code>var3</code> is not a global variable. It's only available within <code>firstFunc</code>.</p>",
           "weight": 100
         }
       ],
@@ -304,28 +318,28 @@
       "position": null,
       "question_name": "Scope: Scope Chain",
       "question_type": "true_false_question",
-      "question_text": "<p><span>What matters for the scope chain is where the function is invoked — not where it is declared.</span></p>",
+      "question_text": "<p>Given this JavaScript code:</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">function</span> <span class=\"nx\">oneAndOne</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"nx\">num1</span> <span class=\"o\">=</span> <span class=\"mi\">1</span><span class=\"p\">;</span>\n  <span class=\"kd\">const</span> <span class=\"nx\">num2</span> <span class=\"o\">=</span> <span class=\"mi\">2</span><span class=\"p\">;</span>\n  <span class=\"k\">return</span> <span class=\"nx\">num1</span> <span class=\"o\">+</span> <span class=\"nx\">num2</span><span class=\"p\">;</span>\n<span class=\"p\">}</span>\n<span class=\"nx\">oneAndOne</span><span class=\"p\">();</span>\n\n<span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">num1</span><span class=\"p\">);</span>\n</code></pre></div>\n<p>The <code>console.log</code> method on the last line will log the number 1.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "<p>&nbsp;<strong>Source/s:&nbsp;</strong><a class=\"inline_disabled\" href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\" target=\"_blank\">Scope Chain</a>, <a class=\"inline_disabled\" href=\"https://learning.flatironschool.com/courses/3297/pages/lexical-scoping?module_item_id=143573\" target=\"_blank\">Lexical Scoping</a></p>",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\">Scope Chain</a></li><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/lexical-scoping?module_item_id=143573\">Lexical Scoping</a></li></ul><p></p>",
       "answers": [
         {
           "comments": "",
-          "comments_html": "<p><span>Be sure to study the source/s for this question. You'll get it next time.</span></p>",
+          "comments_html": "<p>Since <code>num1</code> is declared <strong>inside</strong> the <code>oneAndOne</code> function, it cannot be\naccessed from the global scope.</p>",
           "text": "True",
           "weight": 0,
-          "id": 1998
+          "id": 8598
         },
         {
           "comments": "",
-          "comments_html": "<p>Nailed it!</p>",
+          "comments_html": "<p>Nailed it! Since <code>num1</code> is declared <strong>inside</strong> the <code>oneAndOne</code> function, it\ncannot be accessed from the global scope.</p>",
           "text": "False",
           "weight": 100,
-          "id": 7998
+          "id": 4479
         }
       ],
       "variables": null,
@@ -343,28 +357,28 @@
       "position": null,
       "question_name": "Scope: Scope Chain",
       "question_type": "true_false_question",
-      "question_text": "<p><span>All variables and functions declared in outer scopes are available in inner scopes via the scope chain.</span></p>",
+      "question_text": "<p>All variables and functions declared in outer scopes are available in inner\nscopes via the scope chain.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "<p>&nbsp;<strong>Source/s:&nbsp;</strong><a class=\"inline_disabled\" href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\" target=\"_blank\">Scope Chain</a></p>",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\">Scope Chain</a></li></ul><p></p>",
       "answers": [
         {
           "comments": "",
           "comments_html": "<p>Correct!</p>",
           "text": "True",
           "weight": 100,
-          "id": 3848
+          "id": 9624
         },
         {
           "comments": "",
-          "comments_html": "<p><span>Be sure to study the source/s for this question. You'll get it next time.</span></p>",
+          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
           "text": "False",
           "weight": 0,
-          "id": 7210
+          "id": 1961
         }
       ],
       "variables": null,
@@ -381,37 +395,50 @@
       "assessment_question_id": 88096,
       "position": null,
       "question_name": "Scope: Scope Chain",
-      "question_type": "short_answer_question",
-      "question_text": "<p><span>When JavaScript code is run in the browser, how many passes over our code does it make?</span></p>",
+      "question_type": "matching_question",
+      "question_text": "<p>When our JavaScript code is run in the browser, the JavaScript engine actually\nmakes two separate passes over our code: <strong>compilation</strong> and <strong>execution</strong>.</p>\n\n<p>Match each of these concepts with the correct description.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "<p><span>Be sure to study the source/s for this question. You'll get it next time.</span></p>",
-      "neutral_comments_html": "<p>&nbsp;<strong>Source/s:&nbsp;</strong><a class=\"inline_disabled\" href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\" target=\"_blank\">Scope Chain</a></p>",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\">Scope Chain</a></li></ul><p></p>",
       "answers": [
         {
-          "id": "3268",
-          "text": "two",
+          "id": 2342,
+          "text": "Compilation Phase",
+          "left": "Compilation Phase",
+          "right": "Allocates memory, sets up references to variables, and adds a reference to the\nappropriate scope chain for functions",
           "comments": "",
           "comments_html": "",
-          "weight": 100
+          "match_id": 1676
         },
         {
-          "id": "9757",
-          "text": "2",
+          "id": 3183,
+          "text": "Execution Phase",
+          "left": "Execution Phase",
+          "right": "Runs our code line-by-line, assigning values to variables and calling functions",
           "comments": "",
           "comments_html": "",
-          "weight": 100
+          "match_id": 6125
         }
       ],
       "variables": null,
       "formulas": null,
       "answer_tolerance": null,
       "formula_decimal_places": null,
-      "matches": null,
-      "matching_answer_incorrect_matches": null
+      "matches": [
+        {
+          "text": "Allocates memory, sets up references to variables, and adds a reference to the\nappropriate scope chain for functions",
+          "match_id": 1676
+        },
+        {
+          "text": "Runs our code line-by-line, assigning values to variables and calling functions",
+          "match_id": 6125
+        }
+      ],
+      "matching_answer_incorrect_matches": ""
     }
   ]
 }
