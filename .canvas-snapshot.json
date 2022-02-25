@@ -4,7 +4,7 @@
     "title": "Scope Quiz",
     "html_url": "https://learning.flatironschool.com/courses/3297/quizzes/12279",
     "mobile_url": "https://learning.flatironschool.com/courses/3297/quizzes/12279?force_user=1&persist_headless=1",
-    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"phase-1-quiz-scope\"></div>\n<header class=\"fis-header\"><a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/phase-1-quiz-scope/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a></header>\n<p>It's time to check your knowledge! Use this quiz to create a custom study guide. Note any answers that were marked incorrect, so you can study the relevant material and try this quiz again.</p>\n<p>If you don't know the answer to a question, please do not guess. Instead, select \"I don't know\". It's OK not to know everything and to admit when we're unsure.</p>",
+    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"phase-1-quiz-scope\"></div>\n<header class=\"fis-header\">\n  <a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/phase-1-quiz-scope/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a>\n</header>\n\n<p>It's time to check your knowledge! Use this quiz to create a custom study guide.\nNote any answers that were marked incorrect, so you can study the relevant\nmaterial and try this quiz again.</p>\n\n<p>If you don't know the answer to a question, please do not guess. Instead, select\n\"I don't know\". It's OK not to know everything and to admit when we're unsure.</p>",
     "quiz_type": "assignment",
     "time_limit": null,
     "timer_autosubmit_disabled": false,
@@ -71,7 +71,7 @@
     "only_visible_to_overrides": false,
     "assignment_group_id": 10827,
     "show_correct_answers_last_attempt": true,
-    "version_number": 2,
+    "version_number": 3,
     "has_access_code": false,
     "post_to_sis": false,
     "migration_id": null,
@@ -233,7 +233,7 @@
       "position": null,
       "question_name": "Scope: Lexical Scoping",
       "question_type": "true_false_question",
-      "question_text": "<p>Lexical scope in JavaScript means that a variable defined outside a function can\nbe accessible inside the function, but not the other way around.</p>",
+      "question_text": "<p>For variables defined using <code>const</code> or <code>let</code>, lexical scope means that a\nvariable defined outside a function can be accessible inside the function,\nbut not the other way around.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -282,21 +282,21 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\">Scope Chain</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 2877,
+          "id": "2877",
           "text": "var1",
           "comments": "",
           "comments_html": "<p>Correct!</p>",
           "weight": 100
         },
         {
-          "id": 9268,
+          "id": "9268",
           "text": "var2",
           "comments": "",
           "comments_html": "<p><code>var2</code> is not a global variable. It's only available within <code>firstFunc</code>.</p>",
           "weight": 100
         },
         {
-          "id": 8847,
+          "id": "8847",
           "text": "var3",
           "comments": "",
           "comments_html": "<p><code>var3</code> is not a global variable. It's only available within <code>firstFunc</code>.</p>",
@@ -406,22 +406,22 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/3297/pages/scope-chain?module_item_id=143571\">Scope Chain</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 2342,
+          "id": "2342",
           "text": "Compilation Phase",
           "left": "Compilation Phase",
           "right": "Allocates memory, sets up references to variables, and adds a reference to the\nappropriate scope chain for functions",
           "comments": "",
           "comments_html": "",
-          "match_id": 1676
+          "match_id": 2625
         },
         {
-          "id": 3183,
+          "id": "3183",
           "text": "Execution Phase",
           "left": "Execution Phase",
           "right": "Runs our code line-by-line, assigning values to variables and calling functions",
           "comments": "",
           "comments_html": "",
-          "match_id": 6125
+          "match_id": 5973
         }
       ],
       "variables": null,
@@ -431,11 +431,11 @@
       "matches": [
         {
           "text": "Allocates memory, sets up references to variables, and adds a reference to the\nappropriate scope chain for functions",
-          "match_id": 1676
+          "match_id": 2625
         },
         {
           "text": "Runs our code line-by-line, assigning values to variables and calling functions",
-          "match_id": 6125
+          "match_id": 5973
         }
       ],
       "matching_answer_incorrect_matches": ""
